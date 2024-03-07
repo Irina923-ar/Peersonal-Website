@@ -2,13 +2,15 @@ import React from "react";
 
 const Portofolios = () => {
   return (
-    <div className="potofolios-page">
-      <div className="services-page-header skills-page-header">
+    <div className="section-1">
+      <div className="section-header-1">
         <div>
-          <div className="about-page-subtitle2">My Portfolios</div>
-          <div className="multicolor">The Projects l’ve been working on.</div>
+          <div className="page-subtitle-1">My Portfolios</div>
+          <div className="text-gradient-1 multicolor">
+            The Projects l’ve been working on.
+          </div>
         </div>
-        <div className="about-page-subtitle">
+        <div className="page-subtitle-2">
           Create UI mockups and prototypes that clearly show how sites work and
           look. Make unique graphic designs be prepared.
         </div>
@@ -19,28 +21,34 @@ const Portofolios = () => {
         <button>Mobile App</button>
         <button> Dashboard</button>
       </div>
-      <div className="services-page-container skills-page-container">
+      <div className="section-container">
         <div className="container-div mr">
           <div></div>
           <div>
-            <div className="multicolor">Sila Mobile App design</div>
-            <div className="about-page-subtitle">Mobile App</div>
+            <div className="text-gradient-1 multicolor">
+              Sila Mobile App design
+            </div>
+            <div className="page-subtitle-4">Mobile App</div>
           </div>
           <img src="assets/arrow-diagonal.svg"></img>
         </div>
         <div className="container-div mr">
           <div></div>
           <div>
-            <div className="multicolor">Sila Mobile App design</div>
-            <div className="about-page-subtitle">Mobile App</div>
+            <div className="text-gradient-1 multicolor">
+              Sila Mobile App design
+            </div>
+            <div className="page-subtitle-4">Mobile App</div>
           </div>
           <img src="assets/arrow-diagonal.svg"></img>
         </div>
         <div className="container-div mr">
           <div></div>
           <div>
-            <div className="multicolor">Sila Mobile App design</div>
-            <div className="about-page-subtitle">Mobile App</div>
+            <div className="text-gradient-1 multicolor">
+              Sila Mobile App design
+            </div>
+            <div className="page-subtitle-4">Mobile App</div>
           </div>
           <img src="assets/arrow-diagonal.svg"></img>
         </div>

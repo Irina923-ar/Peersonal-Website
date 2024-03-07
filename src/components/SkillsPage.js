@@ -2,21 +2,21 @@ import React from "react";
 
 const SkillsPage = () => {
   return (
-    <div className="skills-page">
-      <div className="services-page-header skills-page-header">
+    <div className="section-1 skills-section">
+      <div className="section-header-1">
         <div>
-          <div className="about-page-subtitle2">My Skills</div>
-          <div className="multicolor">My Experience and Skills</div>
+          <div className="page-subtitle-1">My Skills</div>
+          <div className="text-gradient-1">My Experience and Skills</div>
         </div>
-        <div className="about-page-subtitle">
+        <div className="page-subtitle-2">
           They need the ability to ask others what they think about designs or
           projects before even starting work on them.
         </div>
       </div>
-      <div className="services-page-container skills-page-container">
+      <div className="section-container">
         <div className="container-div mr">
-          <div className="skills-page-subtitle">2012- 2014_Graphic Design</div>
-          <div className="multicolor">Full Digital</div>
+          <div className="subtitle-container">2012- 2014_Graphic Design</div>
+          <div className="text-gradient-1">Full Digital</div>
           <div className="about-page-subtitle">
             They design creative content for online campaigns, print ads,
             websites, & even videos.
@@ -27,8 +27,8 @@ const SkillsPage = () => {
           </div>
         </div>
         <div className="container-div mr">
-          <div className="skills-page-subtitle">2012- 2014_Graphic Design</div>
-          <div className="multicolor">Full Digital</div>
+          <div className="subtitle-container">2012- 2014_Graphic Design</div>
+          <div className="text-gradient-1">Full Digital</div>
           <div className="about-page-subtitle">
             They design creative content for online campaigns, print ads,
             websites, & even videos.
@@ -39,8 +39,8 @@ const SkillsPage = () => {
           </div>
         </div>
         <div className="container-div mr">
-          <div className="skills-page-subtitle">2012- 2014_Graphic Design</div>
-          <div className="multicolor">Full Digital</div>
+          <div className="subtitle-container">2012- 2014_Graphic Design</div>
+          <div className="text-gradient-1">Full Digital</div>
           <div className="about-page-subtitle">
             They design creative content for online campaigns, print ads,
             websites, & even videos.
@@ -51,8 +51,8 @@ const SkillsPage = () => {
           </div>
         </div>
         <div className="container-div mr">
-          <div className="skills-page-subtitle">2012- 2014_Graphic Design</div>
-          <div className="multicolor">Full Digital</div>
+          <div className="subtitle-container">2012- 2014_Graphic Design</div>
+          <div className="text-gradient-1">Full Digital</div>
           <div className="about-page-subtitle">
             They design creative content for online campaigns, print ads,
             websites, & even videos.

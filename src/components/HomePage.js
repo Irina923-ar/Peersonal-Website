@@ -17,7 +17,9 @@ const HomePage = () => {
         </a>
       </div>
       <div className="container-home">
-        <div className="container-title">A FRONT END DEVELOPER</div>
+        <div className="text-gradient-1 container-title">
+          A FRONT END DEVELOPER
+        </div>
         <img className="container-my-name" src="assets/Irina.png"></img>
       </div>
     </div>

@@ -8,19 +8,19 @@ const Navbar = () => {
       </div>
       <div className="menu">
         <div className="menu-section">
-          <div className="div-link">
+          <div className="nav-links">
             <a>Home</a>
           </div>
-          <div className="div-link">
+          <div className="nav-links">
             <a>About</a>
           </div>
-          <div className="div-link">
+          <div className="nav-links">
             <a>Service</a>
           </div>
-          <div className="div-link">
+          <div className="nav-links">
             <a>My Skills</a>
           </div>
-          <div className="div-link">
+          <div className="nav-links">
             <a>Portfolio</a>
           </div>
         </div>
