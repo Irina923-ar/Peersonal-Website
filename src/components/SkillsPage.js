@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillsPage = () => {
   return (
-    <div className="section-1 skills-section">
+    <div className="section-1 skills-section" id="skills">
       <div className="section-header-1">
         <div>
           <div className="page-subtitle-1">My Skills</div>
@@ -63,22 +63,54 @@ const SkillsPage = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <div>94%</div>
-          <div>Graphic Designer</div>
+      <div className="container-percent">
+        <div className="box">
+          <div className="btn-div percent">
+            <svg>
+              <circle className="circle-1" cx="85" cy="85" r="85"></circle>
+              <circle className="circle-1" cx="85" cy="85" r="85"></circle>
+            </svg>
+            <div className="border-gradient-2 btn-project number">
+              <div className="btn">94%</div>
+            </div>
+          </div>
+          <div className="text">Graphic Designer</div>
         </div>
-        <div>
-          <div>89%</div>
-          <div>Creative Designer</div>
+        <div className="box">
+          <div className="btn-div percent">
+            <svg>
+              <circle className="circle-2" cx="85" cy="85" r="85"></circle>
+              <circle className="circle-2" cx="85" cy="85" r="85"></circle>
+            </svg>
+            <div className="border-gradient-2 btn-project number">
+              <div className="btn">89%</div>
+            </div>
+          </div>
+          <div className="text">Creative Designer</div>
         </div>
-        <div>
-          <div>91%</div>
-          <div>UI/UX Designer</div>
+        <div className="box">
+          <div className="btn-div percent">
+            <svg>
+              <circle className="circle-3" cx="85" cy="85" r="85"></circle>
+              <circle className="circle-3" cx="85" cy="85" r="85"></circle>
+            </svg>
+            <div className="border-gradient-2 btn-project number">
+              <div className="btn">91%</div>
+            </div>
+          </div>
+          <div className="text">UI/UX Designer</div>
         </div>
-        <div>
-          <div>75%</div>
-          <div>Product Designer</div>
+        <div className="box">
+          <div className="btn-div percent">
+            <svg>
+              <circle className="circle-4" cx="85" cy="85" r="85"></circle>
+              <circle className="circle-4" cx="85" cy="85" r="85"></circle>
+            </svg>
+            <div className="border-gradient-2 btn-project number">
+              <div className="btn">75%</div>
+            </div>
+          </div>
+          <div className="text">Product Designer</div>
         </div>
       </div>
     </div>

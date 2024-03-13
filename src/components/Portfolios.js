@@ -2,11 +2,11 @@ import React from "react";
 
 const Portofolios = () => {
   return (
-    <div className="section-1">
+    <div className="section-1 portfolio-section" id="portfolios">
       <div className="section-header-1">
         <div>
           <div className="page-subtitle-1">My Portfolios</div>
-          <div className="text-gradient-1 multicolor">
+          <div className="text-gradient-1">
             The Projects l’ve been working on.
           </div>
         </div>
@@ -25,32 +25,32 @@ const Portofolios = () => {
         <div className="container-div mr">
           <div></div>
           <div>
-            <div className="text-gradient-1 multicolor">
-              Sila Mobile App design
-            </div>
+            <div className="text-gradient-1">Sila Mobile App design</div>
             <div className="page-subtitle-4">Mobile App</div>
           </div>
-          <img src="assets/arrow-diagonal.svg"></img>
+          <div className="div-arrow">
+            <img src="assets/arrow-diagonal.svg"></img>
+          </div>
         </div>
         <div className="container-div mr">
           <div></div>
           <div>
-            <div className="text-gradient-1 multicolor">
-              Sila Mobile App design
-            </div>
+            <div className="text-gradient-1">Sila Mobile App design</div>
             <div className="page-subtitle-4">Mobile App</div>
           </div>
-          <img src="assets/arrow-diagonal.svg"></img>
+          <div className="div-arrow">
+            <img src="assets/arrow-diagonal.svg"></img>
+          </div>
         </div>
         <div className="container-div mr">
           <div></div>
           <div>
-            <div className="text-gradient-1 multicolor">
-              Sila Mobile App design
-            </div>
+            <div className="text-gradient-1">Sila Mobile App design</div>
             <div className="page-subtitle-4">Mobile App</div>
           </div>
-          <img src="assets/arrow-diagonal.svg"></img>
+          <div className="div-arrow">
+            <img src="assets/arrow-diagonal.svg"></img>
+          </div>
         </div>
         <div>
           <div></div>

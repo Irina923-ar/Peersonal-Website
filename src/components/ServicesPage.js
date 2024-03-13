@@ -2,11 +2,11 @@ import React from "react";
 
 const ServicesPage = () => {
   return (
-    <div className="section-1">
+    <div className="section-1 service-section" id="service">
       <div className="section-header-1">
         <div>
           <div className="page-subtitle-1">My Service</div>
-          <div className="text-gradient-1 multicolor">
+          <div className="text-gradient-1">
             I Provide the Best Service for You.
           </div>
         </div>
@@ -19,7 +19,7 @@ const ServicesPage = () => {
       <div className="section-container">
         <div className="container-div mr">
           <img className="img-container" src="assets/product.svg"></img>
-          <div className="text-gradient-1 multicolor">Product Design</div>
+          <div className="text-gradient-1">Product Design</div>
           <div className="page-subtitle-4">
             Product design is understanding the end-user customer, the person
             for whom the product is being created.
@@ -31,7 +31,7 @@ const ServicesPage = () => {
         </div>
         <div className="container-div mr">
           <img className="img-container" src="assets/ux.svg"></img>
-          <div className="text-gradient-1 multicolor">UX/UI Designer</div>
+          <div className="text-gradient-1">UX/UI Designer</div>
           <div className="page-subtitle-4">
             Product managers and engineers to gather requirements from users
             before designing ideas.
@@ -43,7 +43,7 @@ const ServicesPage = () => {
         </div>
         <div className="container-div">
           <img className="img-container" src="assets/product.svg"></img>
-          <div className="text-gradient-1 multicolor">Interactive Design</div>
+          <div className="text-gradient-1">Interactive Design</div>
           <div className="page-subtitle-4">
             The design of interactive products and services in which a
             designer's focus goes beyond.

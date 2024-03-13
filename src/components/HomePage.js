@@ -2,12 +2,12 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="home-page">
+    <div className="section-home" id="home">
       <div className="background-homepage">
         <img src="assets/background.svg" alt="background"></img>
       </div>
       <div className="contact-me">
-        <a>
+        <a href="#contact">
           <div className="contact-div">
             <div className="contact-title">Contact Me</div>
             <img src="assets/arrow.svg" alt="arrow"></img>

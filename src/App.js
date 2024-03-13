@@ -3,7 +3,9 @@ import HomePage from "./components/HomePage.js";
 import AboutPage from "./components/AboutPage.js";
 import ServicesPage from "./components/ServicesPage.js";
 import SkillsPage from "./components/SkillsPage.js";
-import Portofolios from "./components/Portofolios.js";
+import Portfolios from "./components/Portfolios.js";
+import ContactMe from "./components/ContactMe.js";
+import Backdrop from "./components/Backdrop.js";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <AboutPage></AboutPage>
       <ServicesPage></ServicesPage>
       <SkillsPage></SkillsPage>
-      <Portofolios></Portofolios>
+      <Portfolios></Portfolios>
+      <ContactMe></ContactMe>
+      <Backdrop></Backdrop>
     </div>
   );
 }
