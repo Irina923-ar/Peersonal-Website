@@ -23,33 +23,39 @@ const Portofolios = () => {
       </div>
       <div className="section-container">
         <div className="container-div mr">
-          <div></div>
-          <div>
-            <div className="text-gradient-1">Sila Mobile App design</div>
-            <div className="page-subtitle-4">Mobile App</div>
-          </div>
-          <div className="div-arrow">
-            <img src="assets/arrow-diagonal.svg"></img>
-          </div>
-        </div>
-        <div className="container-div mr">
-          <div></div>
-          <div>
-            <div className="text-gradient-1">Sila Mobile App design</div>
-            <div className="page-subtitle-4">Mobile App</div>
-          </div>
-          <div className="div-arrow">
-            <img src="assets/arrow-diagonal.svg"></img>
+          <div className="placeholder-img"></div>
+          <div className="container-div-2">
+            <div>
+              <div className="text-gradient-1">Sila Mobile App design</div>
+              <div className="page-subtitle-4">Mobile App</div>
+            </div>
+            <div className="div-arrow">
+              <img src="assets/arrow-diagonal.svg"></img>
+            </div>
           </div>
         </div>
         <div className="container-div mr">
-          <div></div>
-          <div>
-            <div className="text-gradient-1">Sila Mobile App design</div>
-            <div className="page-subtitle-4">Mobile App</div>
+          <div className="placeholder-img"></div>
+          <div className="container-div-2">
+            <div>
+              <div className="text-gradient-1">Sila Mobile App design</div>
+              <div className="page-subtitle-4">Mobile App</div>
+            </div>
+            <div className="div-arrow">
+              <img src="assets/arrow-diagonal.svg"></img>
+            </div>
           </div>
-          <div className="div-arrow">
-            <img src="assets/arrow-diagonal.svg"></img>
+        </div>
+        <div className="container-div mr">
+          <div className="placeholder-img"></div>
+          <div className="container-div-2">
+            <div>
+              <div className="text-gradient-1">Sila Mobile App design</div>
+              <div className="page-subtitle-4">Mobile App</div>
+            </div>
+            <div className="div-arrow">
+              <img src="assets/arrow-diagonal.svg"></img>
+            </div>
           </div>
         </div>
         <div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Backdrop = () => {
+const Backdrop = ({ toggleBackdrop }) => {
   return (
     <div className="backdrop-section">
       <div className="backdrop-content">
@@ -45,7 +45,9 @@ const Backdrop = () => {
           <input type="text"></input>
         </div>
         <div className="btn-div">
-          <button className="btn-2">Let’s Talk</button>
+          <button className="btn-2" onClick={toggleBackdrop}>
+            Let’s Talk
+          </button>
         </div>
       </div>
     </div>

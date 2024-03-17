@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomePage = () => {
+const HomePage = ({ scrollToSection }) => {
   return (
     <div className="section-home" id="home">
       <div className="background-homepage">
@@ -8,7 +8,7 @@ const HomePage = () => {
       </div>
       <div className="contact-me">
         <a href="#contact">
-          <div className="contact-div">
+          <div className="contact-div" onClick={scrollToSection}>
             <div className="contact-title">Contact Me</div>
             <img src="assets/arrow.svg" alt="arrow"></img>
           </div>

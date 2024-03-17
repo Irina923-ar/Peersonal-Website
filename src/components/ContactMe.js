@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactMe = () => {
+const ContactMe = ({ toggleBackdrop }) => {
   return (
     <div className="section-1 contact-me-section" id="contact">
       <div className="section-header-1">
@@ -10,7 +10,9 @@ const ContactMe = () => {
           He gives intervals we finished.
         </div>
         <div>
-          <button className="btn-2">Let’s Talk</button>
+          <button className="btn-2" onClick={toggleBackdrop}>
+            Let’s Talk
+          </button>
         </div>
         <div className="section-email">
           <img src="assets/email-icon.svg"></img>
@@ -18,7 +20,7 @@ const ContactMe = () => {
         </div>
         <div className="bottom-line"></div>
       </div>
-      <div></div>
+      <div className="placeholder-contact"></div>
     </div>
   );
 };

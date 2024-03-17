@@ -25,7 +25,9 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="container-placeholder">
+        <img src="assets/play-btn.svg"></img>
+      </div>
     </div>
   );
 };

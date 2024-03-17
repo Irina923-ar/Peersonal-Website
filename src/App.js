@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage.js";
 import AboutPage from "./components/AboutPage.js";
@@ -8,6 +9,12 @@ import ContactMe from "./components/ContactMe.js";
 import Backdrop from "./components/Backdrop.js";
 
 function App() {
+  const [showBackdrop, setShowBackdrop] = useState(false);
+
+  const toggleBackdrop = () => {
+    setShowBackdrop(!showBackdrop);
+  };
+
   return (
     <div className="app">
       <Navbar></Navbar>
@@ -16,8 +23,8 @@ function App() {
       <ServicesPage></ServicesPage>
       <SkillsPage></SkillsPage>
       <Portfolios></Portfolios>
-      <ContactMe></ContactMe>
-      <Backdrop></Backdrop>
+      <ContactMe toggleBackdrop={toggleBackdrop}></ContactMe>
+      {showBackdrop && <Backdrop toggleBackdrop={toggleBackdrop}></Backdrop>}
     </div>
   );
 }

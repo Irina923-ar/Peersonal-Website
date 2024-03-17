@@ -7,6 +7,8 @@
 
 body {
   background-color: var(--clr-dark-blue-400);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 :root {
@@ -82,6 +84,7 @@ body {
   align-items: center;
   margin-bottom: 40px;
   max-width: 1170px;
+  margin-top: 50px;
 
   .text-gradient-1 {
     width: 570px;
@@ -173,10 +176,20 @@ body {
     outline-offset: 40px;
   }
 
+  .active {
+    color: var(--clr-yellow);
+    text-decoration-line: underline;
+    outline-offset: 40px;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
   }
+}
+
+.link-contact {
+  display: none;
 }
 
 .pages-counter {
@@ -205,6 +218,10 @@ body {
   background-color: var(--clr-white);
   margin-bottom: 8px;
   margin-left: 4px;
+}
+
+.menu-svg {
+  display: none;
 }
 
 // ***************************************************
@@ -274,7 +291,6 @@ body {
 .container-title {
   font-weight: var(--fw-bold);
   font-size: var(--fs-38);
-  z-index: 2;
 }
 
 .container-my-name {
@@ -295,9 +311,11 @@ body {
   font-family: var(--font-family-primary);
   background-color: var(--clr-dark-blue-400);
   height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  padding-top: 78px;
+  margin-bottom: 78px;
 
   .text-gradient-1 {
     display: flex;
@@ -309,6 +327,9 @@ body {
 }
 
 .container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   max-width: 1170px;
 }
 
@@ -344,6 +365,18 @@ body {
   align-items: center;
   width: 790px;
   text-align: center;
+}
+
+.container-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  height: 490px;
+  left: calc(50% - 1170px / 2);
+  background: #ffffff;
+  border-radius: 24px;
+  margin-top: 70px;
 }
 
 // ***************************************************
@@ -614,7 +647,6 @@ body {
 
 .portfolio-section {
   .container-div {
-    display: flex;
     border: none;
   }
 
@@ -662,6 +694,26 @@ body {
   }
 }
 
+.placeholder-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 280px;
+  left: 400px;
+  top: 0px;
+
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.container-div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19px;
+}
+
 // ***************************************************
 // CONTACT ME SECTION
 
@@ -669,6 +721,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1170px;
 
   .section-header-1 {
     display: grid;
@@ -716,13 +769,29 @@ body {
   font-size: var(--fs-28);
   font-weight: var(--fw-bold);
   text-align: center;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.placeholder-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  width: 640px;
+  height: 960px;
+  background: #061726;
+  position: absolute;
+  left: 950px;
 }
 
 // ***************************************************
 // BACKDROP
 
 .backdrop-section {
-  display: none;
+  display: block;
   visibility: visible;
   position: fixed;
   top: 0;
@@ -823,7 +892,7 @@ body {
   }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .section-1 {
     height: auto;
   }
@@ -836,19 +905,188 @@ body {
 
   .section-container {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
   .navbar {
     display: flex;
+    height: auto;
+    top: 0;
     width: 100%;
   }
 
   .menu {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    padding-left: 90px;
+  }
+
+  .menu.open {
+    display: none;
   }
 
   .pages-counter {
     display: none;
   }
-} */
+
+  .menu-section {
+    display: none;
+  }
+
+  .menu-section.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--clr-dark-blue-300);
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .menu-section .nav-links {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    transform: rotate(0);
+    margin-top: 0;
+  }
+
+  .link-contact {
+    display: flex;
+  }
+
+  .menu-svg {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 30px;
+    top: 40%;
+  }
+
+  .div-logo {
+    position: static;
+  }
+
+  .mr {
+    margin-right: 0;
+  }
+
+  .container-percent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .btn-project {
+    margin-left: 85px;
+  }
+
+  .service-section {
+    .section-container {
+      grid-template-columns: 1fr;
+    }
+
+    .container-div {
+      margin: 10px auto;
+    }
+
+    .btn-project {
+      margin-left: 0;
+    }
+  }
+
+  .div-experience {
+    display: grid;
+  }
+
+  .experience-subdiv {
+    margin-right: 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .portfolio-section {
+    .section-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .section-about {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    .text-gradient-1 {
+      font-size: var(--fs-60);
+    }
+
+    .tow-row {
+      width: 650px;
+    }
+
+    .page-subtitle-2 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .contact-me {
+    display: none;
+  }
+
+  .background-homepage {
+    img {
+      width: auto;
+    }
+  }
+
+  .container-my-name {
+    transform: scale(0.5);
+    left: -200px;
+  }
+
+  .contact-me-section {
+    max-width: 768px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .text-gradient-1 {
+      font-size: var(--fs-60);
+      width: 500px;
+    }
+
+    .page-subtitle-2 {
+      width: 510px;
+    }
+
+    .btn-2 {
+      margin-bottom: 90px;
+    }
+
+    .section-email {
+      justify-content: center;
+    }
+  }
+
+  .placeholder-contact {
+    display: none;
+  }
+}
