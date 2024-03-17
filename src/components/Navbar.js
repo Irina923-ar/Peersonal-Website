@@ -1,51 +1,29 @@
 import React, { useState, useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-const Navbar = ({ activePage, changePage }) => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
-  const [activePageNumber, setActivePageNumber] = useState(1);
+  const [activeSection, setActiveSection] = useState("home");
+  const sectionOrder = [
+    "home",
+    "about",
+    "service",
+    "skills",
+    "portfolios",
+    "contact",
+  ];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const sections = document.querySelectorAll("section");
+  const handleSetActive = (to) => {
+    setActiveSection(to);
+    const activePageIndex = sectionOrder.indexOf(to);
+    setActivePageNumber(activePageIndex !== -1 ? activePageIndex + 1 : 1);
+  };
 
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < sectionTop + sectionHeight
-        ) {
-          setActiveSection(section.id);
-        }
-      });
-
-      // Define an array of section IDs in the desired order
-      const sectionOrder = [
-        "home",
-        "about",
-        "service",
-        "skills",
-        "portfolios",
-        "contact",
-      ];
-
-      // Calculate active page number based on active section
-      const activePageIndex = sectionOrder.indexOf(activeSection);
-      setActivePageNumber(activePageIndex !== -1 ? activePageIndex + 1 : 1);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [activeSection]);
-
+  const [activePageNumber, setActivePageNumber] = useState(1);
   return (
     <div className="navbar">
       <div className="div-logo">
@@ -54,76 +32,76 @@ const Navbar = ({ activePage, changePage }) => {
       <div className="menu">
         <div className={`menu-section ${isMenuOpen ? "open" : ""}`}>
           <div className="nav-links">
-            <a
-              href="#home"
-              onClick={() => {
-                toggleMenu();
-                setActiveSection("home");
-              }}
+            <Link
+              to="home"
+              spy={true}
+              activeClass="active"
               className={activeSection === "home" ? "active" : ""}
+              onSetActive={() => handleSetActive("home")}
+              onClick={toggleMenu}
             >
               Home
-            </a>
+            </Link>
           </div>
           <div className="nav-links">
-            <a
-              href="#about"
-              onClick={() => {
-                toggleMenu();
-                setActiveSection("about");
-              }}
+            <Link
+              to="about"
+              spy={true}
+              activeClass="active"
               className={activeSection === "about" ? "active" : ""}
+              onSetActive={() => handleSetActive("about")}
+              onClick={toggleMenu}
             >
               About
-            </a>
+            </Link>
           </div>
           <div className="nav-links">
-            <a
-              href="#service"
-              onClick={() => {
-                toggleMenu();
-                setActiveSection("service");
-              }}
+            <Link
+              to="service"
+              spy={true}
+              activeClass="active"
               className={activeSection === "service" ? "active" : ""}
+              onSetActive={() => handleSetActive("service")}
+              onClick={toggleMenu}
             >
               Service
-            </a>
+            </Link>
           </div>
           <div className="nav-links">
-            <a
-              href="#skills"
-              onClick={() => {
-                toggleMenu();
-                setActiveSection("skills");
-              }}
+            <Link
+              to="skills"
+              spy={true}
+              activeClass="active"
               className={activeSection === "skills" ? "active" : ""}
+              onSetActive={() => handleSetActive("skills")}
+              onClick={toggleMenu}
             >
               My Skills
-            </a>
+            </Link>
           </div>
           <div className="nav-links">
-            <a
-              href="#portfolios"
-              onClick={() => {
-                toggleMenu();
-                setActiveSection("portfolios");
-              }}
+            <Link
+              to="portfolios"
+              spy={true}
+              activeClass="active"
               className={activeSection === "portfolios" ? "active" : ""}
+              onSetActive={() => handleSetActive("portfolios")}
+              onClick={toggleMenu}
             >
               Portfolio
-            </a>
+            </Link>
           </div>
           <div className="nav-links link-contact">
-            <a
-              href="#contact"
-              onClick={() => {
-                toggleMenu();
-                setActiveSection("contact");
-              }}
+            <Link
+              to="contact"
+              spy={true}
+              activeClass="active"
               className={activeSection === "contact" ? "active" : ""}
+              onSetActive={() => handleSetActive("contact")}
+              onClick={toggleMenu}
             >
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
         <div className="pages-counter">

@@ -1,20 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--clr-dark-blue-400);
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 :root {
   --clr-violet: #6137ea;
   --clr-yellow: #eacd37;
-  --clr-gray: #e3e3e3;
 
   --clr-dark-blue-100: #080414;
   --clr-dark-blue-200: #1f1935;
@@ -45,6 +31,13 @@ body {
   --screen-md: 768px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 // ***********************************
 //   Utils subtitles
 
@@ -72,10 +65,21 @@ body {
 
 .section-1 {
   font-family: var(--font-family-primary);
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-dark-blue-400);
+  max-width: 100%;
+}
+
+.section-2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  padding: 0 120px 0 120px;
+  margin: 0 auto;
 }
 
 .section-header-1 {
@@ -83,11 +87,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  max-width: 1170px;
   margin-top: 50px;
 
   .text-gradient-1 {
-    width: 570px;
+    min-width: 570px;
     font-size: var(--fs-60);
     line-height: 70px;
     font-weight: var(--fw-bold);
@@ -95,7 +98,7 @@ body {
   }
 
   .page-subtitle-2 {
-    width: 570px;
+    min-width: 570px;
     font-weight: 500;
     line-height: 34px;
     display: flex;
@@ -117,7 +120,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1170px;
 }
 
 // ***************************************************
@@ -167,6 +169,7 @@ body {
   color: var(--clr-white);
   margin-top: 70px;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover,
   &:focus,
@@ -230,8 +233,7 @@ body {
 .section-home {
   font-family: var(--font-family-primary);
   display: flex;
-  max-width: 1170px;
-  height: 100vh;
+  min-height: 100vh;
 
   a {
     text-decoration: none;
@@ -241,15 +243,10 @@ body {
 
 .background-homepage {
   position: relative;
-  width: 100%;
-  top: -10px;
-  height: 100vh;
+  object-fit: contain;
+  min-width: 100%;
   z-index: -1;
-
-  img {
-    width: 162.6%;
-    height: auto;
-  }
+  object-fit: cover;
 }
 
 .contact-me {
@@ -262,13 +259,14 @@ body {
 
 .contact-div {
   display: flex;
+  cursor: pointer;
 }
 
 .contact-title {
   color: var(--clr-white);
   font-weight: var(--fw-bold);
   font-size: var(--fs-24);
-  margin-right: 38px;
+  margin-right: 40px;
   margin-bottom: 3px;
 }
 
@@ -298,7 +296,6 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  max-width: 1170px;
   z-index: 1;
   top: 110%;
   left: 60%;
@@ -310,12 +307,10 @@ body {
 .section-about {
   font-family: var(--font-family-primary);
   background-color: var(--clr-dark-blue-400);
-  height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
-  padding-top: 78px;
-  margin-bottom: 78px;
+  padding: 80px 0 80px 0;
 
   .text-gradient-1 {
     display: flex;
@@ -326,17 +321,12 @@ body {
   }
 }
 
-.container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  max-width: 1170px;
-}
-
 .div-experience {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  gap: 100px;
 }
 
 .page-subtitle-2 {
@@ -355,15 +345,10 @@ body {
   color: var(--clr-white);
 }
 
-.experience-subdiv {
-  margin-right: 100px;
-}
-
 .tow-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 790px;
   text-align: center;
 }
 
@@ -371,7 +356,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1170px;
   height: 490px;
   left: calc(50% - 1170px / 2);
   background: #ffffff;
@@ -383,15 +367,16 @@ body {
 // SERVICE PAGE
 
 .section-container {
+  gap: 30px;
+
   .page-subtitle-4 {
     font-size: var(--fs-18);
     font-weight: 400;
     line-height: 22px;
     text-align: center;
-    width: 307px;
+    max-width: 307px;
     color: var(--clr-white);
-    margin-top: 12px;
-    margin-bottom: 30px;
+    margin-top: 10px 0 39px 0;
   }
 
   .text-gradient-1 {
@@ -407,6 +392,11 @@ body {
   font-weight: var(--fw-bold);
   font-size: var(--fs-24);
   line-height: 30px;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(244, 244, 166);
+  }
 }
 
 .section-1 .container-div {
@@ -421,10 +411,6 @@ body {
 
 .div-learn-more img {
   margin-left: 8px;
-}
-
-.mr {
-  margin-right: 30px;
 }
 
 .img-container {
@@ -456,6 +442,7 @@ body {
   position: relative;
   z-index: 1;
   margin: 40px 20px 35px 20px;
+  cursor: pointer;
 
   &:before {
     position: absolute;
@@ -473,6 +460,7 @@ body {
   background-color: var(--clr-dark-blue-400);
   border-radius: 40px;
   padding: 21px 61px 21px 61px;
+  cursor: pointer;
 }
 
 .service-section {
@@ -498,9 +486,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 53px 0 30px 0;
   gap: 160px;
-  max-width: 1170px;
 }
 
 .container-percent .btn-project {
@@ -603,6 +590,10 @@ body {
 }
 
 .skills-section {
+  .section-container {
+    gap: 30px;
+  }
+
   .container-div {
     display: grid;
     align-items: center;
@@ -610,15 +601,14 @@ body {
     padding: 49px 20px 45px 24px;
     border: 1.4px solid #6c6c6c;
     border-radius: 16px;
-    width: 270px;
+    max-width: 270px;
   }
 
   .container-div .text-gradient-1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 17px;
-    margin-bottom: 13px;
+    margin-top: 20px 0 10px 0;
     font-size: var(--fs-28);
     font-weight: var(--fw-bold);
     line-height: 30px;
@@ -628,7 +618,7 @@ body {
   .container-div .about-page-subtitle {
     color: var(--clr-white);
     text-align: start;
-    width: 230px;
+    max-width: 230px;
   }
 
   .div-learn-more {
@@ -648,12 +638,21 @@ body {
 .portfolio-section {
   .container-div {
     border: none;
+    cursor: pointer;
+  }
+
+  .section-container {
+    gap: 0;
   }
 
   .div-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid var(--clr-white);
     border-radius: 50%;
-    padding: 14px 15px;
+    width: 44px;
+    height: 44px;
   }
 
   .page-subtitle-4 {
@@ -681,6 +680,7 @@ body {
     color: var(--clr-white);
     border-radius: 10px;
     padding: 14px 65px 14px 65px;
+    cursor: pointer;
   }
 
   button:nth-child(1) {
@@ -718,11 +718,6 @@ body {
 // CONTACT ME SECTION
 
 .contact-me-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1170px;
-
   .section-header-1 {
     display: grid;
     justify-content: flex-start;
@@ -738,7 +733,7 @@ body {
 
   .page-subtitle-2 {
     font-size: var(--fs-26);
-    width: 697px;
+    max-width: 697px;
     margin-bottom: 70px;
   }
 
@@ -769,22 +764,11 @@ body {
   font-size: var(--fs-28);
   font-weight: var(--fw-bold);
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.7;
   }
-}
-
-.placeholder-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1170px;
-  width: 640px;
-  height: 960px;
-  background: #061726;
-  position: absolute;
-  left: 950px;
 }
 
 // ***************************************************
@@ -797,7 +781,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
@@ -893,14 +877,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  .section-1 {
-    height: auto;
-  }
-
   .section-header-1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .section-2 {
+    padding: 80px 30px 0 80px;
   }
 
   .section-container {
@@ -925,7 +909,6 @@ body {
     text-align: center;
     position: relative;
     padding: 0;
-    padding-left: 90px;
   }
 
   .menu.open {
@@ -977,11 +960,8 @@ body {
   }
 
   .div-logo {
+    padding: 15px 20px;
     position: static;
-  }
-
-  .mr {
-    margin-right: 0;
   }
 
   .container-percent {
@@ -1011,6 +991,7 @@ body {
 
   .div-experience {
     display: grid;
+    gap: 50px;
   }
 
   .experience-subdiv {
@@ -1031,13 +1012,13 @@ body {
     display: grid;
     justify-content: center;
     text-align: center;
-    height: auto;
+
     .text-gradient-1 {
       font-size: var(--fs-60);
     }
 
     .tow-row {
-      width: 650px;
+      max-width: 650px;
     }
 
     .page-subtitle-2 {
@@ -1086,7 +1067,7 @@ body {
     }
   }
 
-  .placeholder-contact {
-    display: none;
+  .backdrop-container-1 {
+    gap: 35px;
   }
 }
