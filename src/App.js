@@ -7,8 +7,7 @@ import SkillsPage from "./components/SkillsPage.js";
 import Portfolios from "./components/Portfolios.js";
 import ContactMe from "./components/ContactMe.js";
 import Backdrop from "./components/Backdrop.js";
-/* import Animation3D from "./components/Animation3D.js";
- */
+
 function App() {
   const [showBackdrop, setShowBackdrop] = useState(false);
 
@@ -19,7 +18,7 @@ function App() {
   return (
     <div className="app">
       <Navbar></Navbar>
-      <HomePage>{/* <Animation3D></Animation3D> */}</HomePage>
+      <HomePage></HomePage>
       <AboutPage></AboutPage>
       <ServicesPage></ServicesPage>
       <SkillsPage></SkillsPage>
