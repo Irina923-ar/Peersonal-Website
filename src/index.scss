@@ -282,6 +282,7 @@
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   justify-content: center;
+  position: absolute;
   top: 40%;
   left: 20%;
 }
@@ -299,8 +300,10 @@
 }
 
 .container-my-name {
-  transform: scale(0.7);
+  display: flex;
+  justify-content: flex-start;
   position: relative;
+  transform: scale(0.7);
   left: -15%;
 }
 
@@ -308,7 +311,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1.5);
+}
+
+canvas {
+  transform: scale(2);
 }
 
 // ***************************************************

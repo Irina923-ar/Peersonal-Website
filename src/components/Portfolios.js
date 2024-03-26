@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Portofolios = () => {
+  const [filter, setFilter] = useState("All");
+  const [projects, setProjects] = useState([
+    { name: "Sila Mobile App design", category: "Mobile App" },
+  ]);
+
+  const handleFilterClick = (filterValue) => {
+    setFilter(filterValue);
+  };
+
   return (
     <div className="section-1 portfolio-section" id="portfolios">
       <div className="section-2">
@@ -17,52 +26,72 @@ const Portofolios = () => {
           </div>
         </div>
         <div className="buttons">
-          <button>All</button>
-          <button>Landing Page</button>
-          <button>Mobile App</button>
-          <button> Dashboard</button>
+          <button onClick={() => handleFilterClick("All")}>All</button>
+          <button onClick={() => handleFilterClick("Landing Page")}>
+            Landing Page
+          </button>
+          <button onClick={() => handleFilterClick("Mobile App")}>
+            Mobile App
+          </button>
+          <button onClick={() => handleFilterClick("Dashboard")}>
+            Dashboard
+          </button>
         </div>
         <div className="section-container">
-          <div className="container-div">
-            <div className="placeholder-img"></div>
-            <div className="container-div-2">
-              <div>
-                <div className="text-gradient-1">Sila Mobile App design</div>
-                <div className="page-subtitle-4">Mobile App</div>
-              </div>
-              <div className="div-arrow">
-                <img src="assets/arrow-diagonal.svg"></img>
-              </div>
-            </div>
-          </div>
-          <div className="container-div">
-            <div className="placeholder-img"></div>
-            <div className="container-div-2">
-              <div>
-                <div className="text-gradient-1">Sila Mobile App design</div>
-                <div className="page-subtitle-4">Mobile App</div>
-              </div>
-              <div className="div-arrow">
-                <img src="assets/arrow-diagonal.svg"></img>
-              </div>
-            </div>
-          </div>
-          <div className="container-div">
-            <div className="placeholder-img"></div>
-            <div className="container-div-2">
-              <div>
-                <div className="text-gradient-1">Sila Mobile App design</div>
-                <div className="page-subtitle-4">Mobile App</div>
-              </div>
-              <div className="div-arrow">
-                <img src="assets/arrow-diagonal.svg"></img>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-          </div>
+          {projects.map((project, index) => {
+            if (filter === "All" || project.category === filter) {
+              return (
+                <div className="section-container">
+                  <div className="container-div">
+                    <div className="placeholder-img"></div>
+                    <div className="container-div-2">
+                      <div>
+                        <div className="text-gradient-1">
+                          Sila Mobile App design
+                        </div>
+                        <div className="page-subtitle-4">Mobile App</div>
+                      </div>
+                      <div className="div-arrow">
+                        <img src="assets/arrow-diagonal.svg"></img>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container-div">
+                    <div className="placeholder-img"></div>
+                    <div className="container-div-2">
+                      <div>
+                        <div className="text-gradient-1">
+                          Sila Mobile App design
+                        </div>
+                        <div className="page-subtitle-4">Mobile App</div>
+                      </div>
+                      <div className="div-arrow">
+                        <img src="assets/arrow-diagonal.svg"></img>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container-div">
+                    <div className="placeholder-img"></div>
+                    <div className="container-div-2">
+                      <div>
+                        <div className="text-gradient-1">
+                          Sila Mobile App design
+                        </div>
+                        <div className="page-subtitle-4">Dashboard</div>
+                      </div>
+                      <div className="div-arrow">
+                        <img src="assets/arrow-diagonal.svg"></img>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     </div>
