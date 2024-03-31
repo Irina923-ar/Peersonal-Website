@@ -24,11 +24,11 @@ const Portofolios = () => {
             I have built various different projects to fit different aspects.
           </div>
         </div>
-        <div className="buttons">
+        {/* <div className="buttons">
           <button onClick={() => handleFilterClick("All")}>All</button>
           <button onClick={() => handleFilterClick("Games")}>Games</button>
           <button onClick={() => handleFilterClick("Web app")}>Web App</button>
-        </div>
+        </div> */}
         <div>
           {projects.map((project) => {
             if (filter === "All" || project.category === filter) {
@@ -76,9 +76,33 @@ const Portofolios = () => {
                       </div>
                     </div>
                   </div>
-                  <div>
-                    <div></div>
-                    <div></div>
+                  <div className="container-div">
+                    <div className="placeholder-img"></div>
+                    <div className="container-div-2">
+                      <div>
+                        <div className="text-gradient-1">
+                          Sila Mobile App design
+                        </div>
+                        <div className="page-subtitle-4">Dashboard</div>
+                      </div>
+                      <div className="div-arrow">
+                        <img src="assets/arrow-diagonal.svg"></img>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container-div">
+                    <div className="placeholder-img"></div>
+                    <div className="container-div-2">
+                      <div>
+                        <div className="text-gradient-1">
+                          Sila Mobile App design
+                        </div>
+                        <div className="page-subtitle-4">Dashboard</div>
+                      </div>
+                      <div className="div-arrow">
+                        <img src="assets/arrow-diagonal.svg"></img>
+                      </div>
+                    </div>
                   </div>
                 </div>
               );

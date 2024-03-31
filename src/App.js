@@ -6,7 +6,7 @@ import ServicesPage from "./components/ServicesPage.js";
 import SkillsPage from "./components/SkillsPage.js";
 import Portfolios from "./components/Portfolios.js";
 import ContactMe from "./components/ContactMe.js";
-import Backdrop from "./components/Backdrop.js";
+/* import Backdrop from "./components/Backdrop.js";*/
 
 function App() {
   const [showBackdrop, setShowBackdrop] = useState(false);
@@ -24,7 +24,7 @@ function App() {
       <SkillsPage></SkillsPage>
       <Portfolios></Portfolios>
       <ContactMe toggleBackdrop={toggleBackdrop}></ContactMe>
-      {showBackdrop && <Backdrop toggleBackdrop={toggleBackdrop}></Backdrop>}
+      {/*       {showBackdrop && <Backdrop toggleBackdrop={toggleBackdrop}></Backdrop>}*/}
     </div>
   );
 }

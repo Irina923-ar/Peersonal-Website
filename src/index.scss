@@ -57,7 +57,6 @@
   background-clip: text;
 }
 
-
 .border-gradient:before {
   background-image: linear-gradient(to right, #40c9ff, #be00cf, #ff0f7b);
 }
@@ -325,7 +324,6 @@
   align-items: center;
   padding: 80px 0 80px 0;
 
-
   .div-experience {
     display: flex;
     justify-content: center;
@@ -345,6 +343,7 @@
   .experience-title {
     font-size: var(--fs-32);
     font-weight: var(--fw-bold);
+    text-align: center;
   }
 
   .experience-description {
@@ -352,6 +351,7 @@
     font-size: var(--fs-16);
     font-weight: var(--fw-bold);
     color: var(--clr-white);
+    text-align: center;
   }
 
   .irina-image {
@@ -361,7 +361,6 @@
     width: 100%;
     height: auto;
   }
-
 
   @media (max-width: 1120px) {
     .page-subtitle-second {
@@ -647,12 +646,11 @@
   }
 }
 
-.skills-section {
-  .section-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-  }
+.skills-section .section-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
+.skills-section {
   .container-div {
     display: grid;
     align-items: center;
@@ -936,11 +934,15 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .section-container {
     max-width: fit-content;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
+  }
+
+  .skills-section .section-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .container-percent {
@@ -973,6 +975,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .skills-section .section-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .container-percent {
     max-width: fit-content;
     grid-template-columns: 1fr 1fr;
@@ -997,15 +1003,15 @@
   .service-section .section-container {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 860px) {
   .section-header-1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
 
+@media (max-width: 860px) {
   .section-container-2 {
     padding: 80px 30px 0 30px;
   }
@@ -1061,6 +1067,10 @@
   .menu-section .nav-links {
     margin-right: 20px;
     margin-bottom: 0;
+
+    &:first-child {
+      display: none;
+    }
   }
 
   .nav-links {
