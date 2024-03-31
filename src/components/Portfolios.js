@@ -26,17 +26,10 @@ const Portofolios = () => {
         </div>
         <div className="buttons">
           <button onClick={() => handleFilterClick("All")}>All</button>
-          <button onClick={() => handleFilterClick("Landing Page")}>
-            Landing Page
-          </button>
-          <button onClick={() => handleFilterClick("Mobile App")}>
-            Mobile App
-          </button>
-          <button onClick={() => handleFilterClick("Dashboard")}>
-            Dashboard
-          </button>
+          <button onClick={() => handleFilterClick("Games")}>Games</button>
+          <button onClick={() => handleFilterClick("Web app")}>Web App</button>
         </div>
-        <div className="section-container">
+        <div>
           {projects.map((project) => {
             if (filter === "All" || project.category === filter) {
               return (

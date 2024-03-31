@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="div-logo">
-        <img className="logo" src="assets/logo.svg" alt="Logo" />
+        <img className="logo" src="assets/logo.jpeg" alt="Logo" />
       </div>
       <div className="menu">
         <div className={`menu-section ${isMenuOpen ? "open" : ""}`}>

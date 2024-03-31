@@ -77,20 +77,19 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 120px 0 120px;
   margin: 0 auto;
 }
 
 .section-header-1 {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0px 40px 0px;
 
   .text-gradient-1 {
-    min-width: 570px;
     font-size: var(--fs-60);
     line-height: 70px;
     font-weight: var(--fw-bold);
@@ -98,12 +97,8 @@
   }
 
   .page-subtitle-2 {
-    min-width: 570px;
     font-weight: 500;
     line-height: 34px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     font-size: var(--fs-24);
     color: var(--clr-white);
   }
@@ -117,9 +112,9 @@
 }
 
 .section-container {
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 // ***************************************************
@@ -143,7 +138,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--clr-dark-blue-200);
-  padding: 33px 35px 33px 35px;
+  padding: 30px 30px 30px 30px;
 }
 
 .menu {
@@ -225,6 +220,12 @@
 
 .menu-svg {
   display: none;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 
 // ***************************************************
@@ -376,6 +377,7 @@
 // SERVICE PAGE
 
 .section-container {
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 
   .page-subtitle-4 {
@@ -496,9 +498,10 @@
 }
 
 .container-percent {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 53px 0 30px 0;
   gap: 160px;
 }
@@ -604,6 +607,7 @@
 
 .skills-section {
   .section-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
   }
 
@@ -735,13 +739,13 @@
   .section-header-1 {
     display: grid;
     justify-content: flex-start;
+    grid-template-columns: 1fr;
     align-items: center;
     max-width: 1170px;
   }
 
   .text-gradient-1 {
     font-size: var(--fs-82);
-    width: 697px;
     margin-bottom: 20px;
   }
 
@@ -890,7 +894,74 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
+  .section-container {
+    max-width: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+  }
+
+  .container-percent {
+    max-width: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 30px;
+    gap: 100px;
+  }
+
+  .portfolio-section .section-container {
+    max-width: fit-content;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-section .section-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1125px) {
+  .portfolio-section .section-container {
+    max-width: fit-content;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container-percent {
+    max-width: fit-content;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1043px) {
+  .section-about .text-gradient-1 {
+    font-size: var(--fs-60);
+  }
+
+  .contact-me-section {
+    .section-2 {
+      max-width: 768px;
+    }
+
+    .text-gradient-1 {
+      font-size: var(--fs-60);
+    }
+
+    .btn-2 {
+      margin-bottom: 90px;
+    }
+  }
+
+  .service-section .section-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
   .section-header-1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -898,7 +969,7 @@
   }
 
   .section-2 {
-    padding: 80px 30px 0 80px;
+    padding: 80px 30px 0 30px;
   }
 
   .section-container {
@@ -981,12 +1052,12 @@
   .container-percent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 50px;
     margin-top: 40px;
   }
 
   .btn-project {
-    margin-left: 85px;
+    margin-left: 20px;
   }
 
   .service-section {
@@ -1029,6 +1100,7 @@
 
     .text-gradient-1 {
       font-size: var(--fs-60);
+      max-width: 200px;
     }
 
     .tow-row {
@@ -1051,7 +1123,7 @@
     left: -200px;
   }
 
-  .contact-me-section {
+  /* .contact-me-section {
     max-width: 768px;
 
     .text-gradient-1 {
@@ -1070,7 +1142,7 @@
     .section-email {
       justify-content: center;
     }
-  }
+  } */
 
   .backdrop-container-1 {
     gap: 35px;
@@ -1108,7 +1180,6 @@
   .section-header-1 {
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
 
     .page-subtitle-1 {
       font-size: var(--fs-18);
@@ -1120,9 +1191,6 @@
 
     .page-subtitle-2 {
       font-size: var(--fs-16);
-      max-width: 150px;
-      flex-wrap: wrap;
-      word-wrap: break-word;
     }
   }
 
