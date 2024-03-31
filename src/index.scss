@@ -233,7 +233,10 @@
 .section-home {
   font-family: var(--font-family-primary);
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-color: #12192b;
 
   a {
     text-decoration: none;
@@ -241,13 +244,13 @@
   }
 }
 
-.background-homepage {
+/* .background-homepage {
   position: relative;
   object-fit: contain;
   min-width: 100%;
   z-index: -1;
   object-fit: cover;
-}
+} */
 
 .contact-me {
   display: flex;
@@ -305,16 +308,6 @@
   position: relative;
   transform: scale(0.7);
   left: -15%;
-}
-
-.container-animation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-canvas {
-  transform: scale(2);
 }
 
 // ***************************************************
@@ -1051,12 +1044,6 @@ canvas {
 
   .contact-me {
     display: none;
-  }
-
-  .background-homepage {
-    img {
-      width: auto;
-    }
   }
 
   .container-my-name {

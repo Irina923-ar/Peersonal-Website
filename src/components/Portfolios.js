@@ -21,8 +21,7 @@ const Portofolios = () => {
             </div>
           </div>
           <div className="page-subtitle-2">
-            Create UI mockups and prototypes that clearly show how sites work
-            and look. Make unique graphic designs be prepared.
+            I have built various different projects to fit different aspects.
           </div>
         </div>
         <div className="buttons">
@@ -38,10 +37,10 @@ const Portofolios = () => {
           </button>
         </div>
         <div className="section-container">
-          {projects.map((project, index) => {
+          {projects.map((project) => {
             if (filter === "All" || project.category === filter) {
               return (
-                <div className="section-container">
+                <div key={project} className="section-container">
                   <div className="container-div">
                     <div className="placeholder-img"></div>
                     <div className="container-div-2">

@@ -10,8 +10,9 @@ const SkillsPage = () => {
             <div className="text-gradient-1">My Experience and Skills</div>
           </div>
           <div className="page-subtitle-2">
-            They need the ability to ask others what they think about designs or
-            projects before even starting work on them.
+            HTML, CSS, JS, building small and medium web applications with Vue
+            or React, custom plugins, features, animations, and coding
+            interactive layouts
           </div>
         </div>
         <div className="section-container">
@@ -56,7 +57,7 @@ const SkillsPage = () => {
             <div className="text-gradient-1">Full Digital</div>
             <div className="about-page-subtitle">
               They design creative content for online campaigns, print ads,
-              websites, & even videos.
+              websites, & even videos. Visit my Github for more details.
             </div>
             <div className="div-learn-more">
               Learn More
@@ -75,7 +76,7 @@ const SkillsPage = () => {
                 <div className="btn">94%</div>
               </div>
             </div>
-            <div className="text">Graphic Designer</div>
+            <div className="text">HTML</div>
           </div>
           <div className="box">
             <div className="btn-div percent">
@@ -87,7 +88,7 @@ const SkillsPage = () => {
                 <div className="btn">89%</div>
               </div>
             </div>
-            <div className="text">Creative Designer</div>
+            <div className="text">CSS</div>
           </div>
           <div className="box">
             <div className="btn-div percent">
@@ -99,7 +100,7 @@ const SkillsPage = () => {
                 <div className="btn">91%</div>
               </div>
             </div>
-            <div className="text">UI/UX Designer</div>
+            <div className="text">JavaScript</div>
           </div>
           <div className="box">
             <div className="btn-div percent">
@@ -111,7 +112,7 @@ const SkillsPage = () => {
                 <div className="btn">75%</div>
               </div>
             </div>
-            <div className="text">Product Designer</div>
+            <div className="text">React.js</div>
           </div>
         </div>
       </div>

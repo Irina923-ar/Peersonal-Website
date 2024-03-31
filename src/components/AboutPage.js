@@ -8,8 +8,9 @@ const AboutPage = () => {
           <div className="page-subtitle-3">Hey...It's Irina</div>
           <div className="text-gradient-1">FRONT END DEVELOPER</div>
           <div className="page-subtitle-3 tow-row">
-            The customer is very important, the customer will be followed by the
-            customer. For Gapes, in his eternity
+            Resolving design problems, building smart user interfaces and useful
+            interactions, developing rich web applications and seamless web
+            experiences.
           </div>
           <div className="div-experience">
             <div>
