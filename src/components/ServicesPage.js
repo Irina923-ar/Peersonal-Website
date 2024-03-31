@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from "react-scroll";
 
 const ServicesPage = () => {
   return (
     <div className="section-1 service-section" id="service">
-      <div className="section-2">
+      <div className="section-container-2">
         <div className="section-header-1">
           <div>
             <div className="page-subtitle-1">My Service</div>
@@ -57,7 +58,9 @@ const ServicesPage = () => {
         </div>
         <div className="btn-div">
           <div className="border-gradient btn-project">
-            <div className="btn">My Project</div>
+            <Link to="portfolios" activeClass="active" spy={true}>
+              <div className="btn">My Project</div>
+            </Link>
           </div>
         </div>
       </div>

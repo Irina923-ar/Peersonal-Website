@@ -248,11 +248,6 @@ body {
   max-width: 1170px;
 }
 
-.div-experience {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .multicolor {
   display: flex;

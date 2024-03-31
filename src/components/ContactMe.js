@@ -3,7 +3,7 @@ import React from "react";
 const ContactMe = ({ toggleBackdrop }) => {
   return (
     <div className="section-1 contact-me-section" id="contact">
-      <div className="section-2">
+      <div className="section-container-2">
         <div className="section-header-1">
           <div className="text-gradient-1">Got a Projects? Let’s Talk</div>
           <div className="page-subtitle-2">
