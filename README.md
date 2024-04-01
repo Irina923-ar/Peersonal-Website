@@ -2,7 +2,7 @@
 
 ## Description
 
-The Invoice Management System is a web-based application designed to simplify the process of managing invoices. Built with React.js, CSS, HTML, and JavaScript, it offers a user-friendly interface for creating, editing, and organizing invoices. Whether you're a small business owner, or just looking for an efficient way to handle billing, this system is tailored to meet your needs.
+The Portfolio is a visually captivating showcase of frontend development skills, designed to highlight projects and experiences in an engaging and immersive manner.
 
 ![image](https://github.com/Irina923-ar/Portfolio/assets/112747712/c6c8eac5-58eb-427c-961d-a2a4f4cd4ebe)
 
@@ -48,4 +48,4 @@ Experience the Portfolio in action: https://portfolio-mocha-two-37.vercel.app/
 
 ## Usage
 
-After launching the application, you're presented with a dashboard of your invoices. Use the "New Invoice" button to create a new invoice, or select an existing invoice to edit. The filtering and search functionality can be used to navigate through your invoices efficiently. Toggle between light and dark mode using the theme switcher provided in the settings.
+Explore the Portfolio to discover showcased projects and experiences, and witness the frontend development skills brought to life.
