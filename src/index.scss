@@ -93,7 +93,6 @@
 
   .text-gradient-1 {
     font-size: var(--fs-60);
-    line-height: 70px;
     font-weight: var(--fw-bold);
     margin-right: 30px;
   }
@@ -700,6 +699,11 @@
 
   .section-container {
     gap: 0;
+
+    a {
+      text-decoration: none;
+      padding: 0;
+    }
   }
 
   .div-arrow {
@@ -759,17 +763,33 @@
   height: 280px;
   left: 400px;
   top: 0px;
-
   background: #ffffff;
   border-radius: 16px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .container-div-2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 19px;
   gap: 25px;
+}
+
+.div-icon {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  width: 30px;
+  height: 30px;
 }
 
 // ***************************************************
@@ -792,13 +812,14 @@
   .page-subtitle-2 {
     font-size: var(--fs-26);
     max-width: 697px;
-    margin-bottom: 70px;
+    margin-bottom: 200px;
   }
 
-  .section-email {
+  .section-contact {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
 
     .page-subtitle-1 {
       font-size: var(--fs-24);
@@ -829,7 +850,12 @@
   }
 }
 
-// ***************************************************
+.div-section-contact {
+  display: grid;
+  gap: 10px;
+}
+
+/* // ***************************************************
 // BACKDROP
 
 .backdrop-section {
@@ -932,7 +958,7 @@
     padding: 15px 60px 15px 60px;
     margin-top: 8px;
   }
-}
+} */
 
 @media (max-width: 1440px) {
   .section-container {
@@ -1262,7 +1288,7 @@
       font-size: 20px;
     }
 
-    .section-email {
+    .section-contact {
       .page-subtitle-1 {
         font-size: var(--fs-18);
       }
