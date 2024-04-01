@@ -1282,8 +1282,14 @@
       }
     }
 
+    .placeholder-img {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
     .section-container-2 {
-      padding: 10px 10px 0 30px;
+      padding: 30px 10px 0 10px;
     }
 
     .container-div-2 {
