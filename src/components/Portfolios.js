@@ -8,24 +8,28 @@ const Portofolios = () => {
       category: "Web App",
       githubLink: "https://github.com/Irina923-ar/Invoice-Management-System",
       vercelLink: "https://invoice-project-seven.vercel.app/",
+      image: "assets/invoice-image.png",
     },
     {
       name: "Split Tip Calculator",
       category: "Web App",
       githubLink: "https://github.com/Irina923-ar/Split-Tip-Calculator",
       vercelLink: "https://calculator-project-inky-sigma.vercel.app/",
+      image: "assets/split-calculator-image.png",
     },
     {
       name: "Rock Paper Scissors",
       category: "Game",
       githubLink: "https://github.com/Irina923-ar/Rock-Paper-Scissors-Game",
       vercelLink: "https://project-rock-paper-scissors-eight.vercel.app/",
+      image: "assets/rock-paper-scissors-image.png",
     },
     {
       name: "Tic Tac Toe",
       category: "Game",
       githubLink: "https://github.com/Irina923-ar/Tic-Tac-Toe-Game",
       vercelLink: "https://project-tic-tae-toe.vercel.app/",
+      image: "assets/tic-tac-toe-image.png",
     },
     {
       name: "Devjobs",
@@ -33,6 +37,7 @@ const Portofolios = () => {
       githubLink:
         "https://github.com/Irina923-ar/DevJobs-Developer-Job-Listing-Platform",
       vercelLink: "https://devjobs-project-mu.vercel.app/",
+      image: "assets/devjobs-image.png",
     },
   ]);
 
@@ -69,7 +74,11 @@ const Portofolios = () => {
                 rel="noopener noreferrer"
                 className="container-div"
               >
-                <div className="placeholder-img"></div>
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="placeholder-img"
+                />
               </a>
               <div className="container-div-2">
                 <div>

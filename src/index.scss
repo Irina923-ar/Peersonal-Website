@@ -695,6 +695,10 @@
   .container-div {
     border: none;
     cursor: pointer;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .section-container {
@@ -765,6 +769,7 @@
   top: 0px;
   background: #ffffff;
   border-radius: 16px;
+  object-fit: cover;
 
   &:hover {
     transform: scale(1.1);
@@ -852,7 +857,7 @@
 
 .div-section-contact {
   display: grid;
-  gap: 10px;
+  gap: 30px;
 }
 
 /* // ***************************************************
