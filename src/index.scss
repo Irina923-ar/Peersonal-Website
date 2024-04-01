@@ -695,6 +695,7 @@
   .container-div {
     border: none;
     cursor: pointer;
+    max-width: 370px;
 
     a {
       text-decoration: none;
@@ -763,7 +764,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  max-width: 370px;
   height: 280px;
   left: 400px;
   top: 0px;
@@ -1270,6 +1271,8 @@
 
   .portfolio-section {
     .container-div {
+      max-width: 300px;
+
       .text-gradient-1 {
         font-size: var(--fs-24);
       }
@@ -1280,7 +1283,7 @@
     }
 
     .container-div-2 {
-      gap: 60px;
+      gap: 0px;
     }
   }
 
