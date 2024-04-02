@@ -8,7 +8,7 @@ const DiaryPage = () => {
         <div className="section-header-1">
           <div>
             <div className="page-subtitle-1">My Creative Explorations</div>
-            <div className="text-gradient-1">Innovating Tomorrow's Design.</div>
+            <div className="text-gradient-1">Innovate Tomorrow.</div>
           </div>
           <div className="page-subtitle-2">
             In the fertile soil of innovation, my journey unfolds, transforming
