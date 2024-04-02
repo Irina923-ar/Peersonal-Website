@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage.js";
 import AboutPage from "./components/AboutPage.js";
-import ServicesPage from "./components/ServicesPage.js";
+import DiaryPage from "./components/DiaryPage.js";
 import SkillsPage from "./components/SkillsPage.js";
 import Portfolios from "./components/Portfolios.js";
 import ContactMe from "./components/ContactMe.js";
@@ -20,7 +20,7 @@ function App() {
       <Navbar></Navbar>
       <HomePage></HomePage>
       <AboutPage></AboutPage>
-      <ServicesPage></ServicesPage>
+      <DiaryPage></DiaryPage>
       <SkillsPage></SkillsPage>
       <Portfolios></Portfolios>
       <ContactMe toggleBackdrop={toggleBackdrop}></ContactMe>

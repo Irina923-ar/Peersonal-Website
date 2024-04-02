@@ -5,10 +5,10 @@ const ContactMe = ({ toggleBackdrop }) => {
     <div className="section-1 contact-me-section" id="contact">
       <div className="section-container-2">
         <div className="section-header-1">
-          <div className="text-gradient-1">Got a Projects? Let’s Talk</div>
+          <div className="text-gradient-1">Internship Journey Begins</div>
           <div className="page-subtitle-2">
-            The customer very important customer will be followed by the
-            customer. He gives intervals we finished.
+            I'm a junior developer looking to gain hands-on experience. I’m
+            ready to bring my coding skills and enthusiasm to your team.
           </div>
           {/* <div>
             <button className="btn-2" onClick={toggleBackdrop}>

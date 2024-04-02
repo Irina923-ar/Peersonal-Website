@@ -7,7 +7,7 @@ const Navbar = () => {
   const sectionOrder = [
     "home",
     "about",
-    "service",
+    "diary",
     "skills",
     "portfolios",
     "contact",
@@ -57,14 +57,14 @@ const Navbar = () => {
           </div>
           <div className="nav-links">
             <Link
-              to="service"
+              to="diary"
               spy={true}
               activeClass="active"
-              className={activeSection === "service" ? "active" : ""}
-              onSetActive={() => handleSetActive("service")}
+              className={activeSection === "diary" ? "active" : ""}
+              onSetActive={() => handleSetActive("diary")}
               onClick={toggleMenu}
             >
-              Service
+              Diary
             </Link>
           </div>
           <div className="nav-links">

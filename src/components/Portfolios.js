@@ -50,13 +50,15 @@ const Portofolios = () => {
       <div className="section-container-2">
         <div className="section-header-1">
           <div>
-            <div className="page-subtitle-1">My Portfolios</div>
+            <div className="page-subtitle-1">Digital Blooms</div>
             <div className="text-gradient-1">
-              The Projects l’ve been working on.
+              Interactive Blossoms in Code and Design
             </div>
           </div>
           <div className="page-subtitle-2">
-            I have built various different projects to fit different aspects.
+            Discover a diverse portfolio where web applications flourish
+            alongside captivating games, each designed with a touch of
+            creativity and functional elegance.
           </div>
         </div>
         {/* <div className="buttons">
