@@ -7,62 +7,63 @@ const SkillsPage = () => {
         <div className="section-header-1">
           <div>
             <div className="page-subtitle-1">My Skills</div>
-            <div className="text-gradient-1">My Experience and Skills</div>
+            <div className="text-gradient-1">Growing Digital Expertise</div>
           </div>
           <div className="page-subtitle-2">
-            HTML, CSS, JS, building small and medium web applications with Vue
-            or React, custom plugins, features, animations, and coding
-            interactive layouts
+            Blooming in the tech field with a toolkit of HTML, CSS, JavaScript,
+            and React, my journey is rich with continuous learning and creative
+            expression.
           </div>
         </div>
         <div className="section-container">
           <div className="container-div">
-            <div className="subtitle-container">2012- 2014_Graphic Design</div>
-            <div className="text-gradient-1">Full Digital</div>
+            <div className="subtitle-container">Feb 2022</div>
+            <div className="text-gradient-1">Artistic Exploration</div>
             <div className="about-page-subtitle">
-              They design creative content for online campaigns, print ads,
-              websites, & even videos.
+              Unfurled my creative wings with Procreate in February 2022,
+              painting pixels into expressive digital art.
             </div>
-            <div className="div-learn-more">
+            {/* <div className="div-learn-more">
               Learn More
               <img src="assets/arrow-right.svg"></img>
-            </div>
+            </div> */}
           </div>
           <div className="container-div">
-            <div className="subtitle-container">2012- 2014_Graphic Design</div>
-            <div className="text-gradient-1">Full Digital</div>
+            <div className="subtitle-container">Aug 2022</div>
+            <div className="text-gradient-1"> Initiation</div>
             <div className="about-page-subtitle">
-              They design creative content for online campaigns, print ads,
-              websites, & even videos.
+              Began my front-end journey in August 2022, immersing myself in the
+              essentials of HTML, CSS, and the interactive realms of JavaScript
+              and React.
             </div>
-            <div className="div-learn-more">
+            {/* <div className="div-learn-more">
               Learn More
               <img src="assets/arrow-right.svg"></img>
-            </div>
+            </div> */}
           </div>
           <div className="container-div">
-            <div className="subtitle-container">2012- 2014_Graphic Design</div>
-            <div className="text-gradient-1">Full Digital</div>
+            <div className="subtitle-container">Oct 2022 - Feb 2023</div>
+            <div className="text-gradient-1">Meta Certification</div>
             <div className="about-page-subtitle">
-              They design creative content for online campaigns, print ads,
-              websites, & even videos.
+              Completed the Meta Front-End Developer Course from 08.10.2022 to
+              18.02.2023, solidifying my foundation in web development.
             </div>
-            <div className="div-learn-more">
+            {/* <div className="div-learn-more">
               Learn More
               <img src="assets/arrow-right.svg"></img>
-            </div>
+            </div> */}
           </div>
           <div className="container-div">
-            <div className="subtitle-container">2012- 2014_Graphic Design</div>
-            <div className="text-gradient-1">Full Digital</div>
+            <div className="subtitle-container">Nov 2022</div>
+            <div className="text-gradient-1">Practical Application</div>
             <div className="about-page-subtitle">
-              They design creative content for online campaigns, print ads,
-              websites, & even videos. Visit my Github for more details.
+              Applied my learning to build my first website on 26.11.2022, a
+              tangible step in my hands-on development journey.
             </div>
-            <div className="div-learn-more">
+            {/* <div className="div-learn-more">
               Learn More
               <img src="assets/arrow-right.svg"></img>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="container-percent">

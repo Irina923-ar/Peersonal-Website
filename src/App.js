@@ -21,8 +21,8 @@ function App() {
       <HomePage></HomePage>
       <AboutPage></AboutPage>
       <DiaryPage></DiaryPage>
-      <SkillsPage></SkillsPage>
       <Portfolios></Portfolios>
+      <SkillsPage></SkillsPage>
       <ContactMe toggleBackdrop={toggleBackdrop}></ContactMe>
       {/*       {showBackdrop && <Backdrop toggleBackdrop={toggleBackdrop}></Backdrop>}*/}
     </div>

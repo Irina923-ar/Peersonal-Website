@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="div-logo">
-        <img className="logo" src="assets/logo.jpeg" alt="Logo" />
+        <img className="logo" src="assets/logo.png" alt="Logo" />
       </div>
       <div className="menu">
         <div className={`menu-section ${isMenuOpen ? "open" : ""}`}>
@@ -69,18 +69,6 @@ const Navbar = () => {
           </div>
           <div className="nav-links">
             <Link
-              to="skills"
-              spy={true}
-              activeClass="active"
-              className={activeSection === "skills" ? "active" : ""}
-              onSetActive={() => handleSetActive("skills")}
-              onClick={toggleMenu}
-            >
-              My Skills
-            </Link>
-          </div>
-          <div className="nav-links">
-            <Link
               to="portfolios"
               spy={true}
               activeClass="active"
@@ -89,6 +77,18 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Portfolio
+            </Link>
+          </div>
+          <div className="nav-links">
+            <Link
+              to="skills"
+              spy={true}
+              activeClass="active"
+              className={activeSection === "skills" ? "active" : ""}
+              onSetActive={() => handleSetActive("skills")}
+              onClick={toggleMenu}
+            >
+              My Skills
             </Link>
           </div>
           <div className="nav-links link-contact">
