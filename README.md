@@ -5,10 +5,9 @@
 I'm Irina, trying to be a front-end magician and this is my personal website.
 https://portfolio-mocha-two-37.vercel.app/
 
-![image](https://github.com/Irina923-ar/Portfolio/assets/112747712/c6c8eac5-58eb-427c-961d-a2a4f4cd4ebe)
+![image](https://github.com/Irina923-ar/Peersonal-Website/assets/112747712/910d11cd-aba6-4696-a478-ca83fff1e06e)
 
-![image](https://github.com/Irina923-ar/Portfolio/assets/112747712/6148b714-0371-42a3-a38f-bc46285cbb4a)
-
+![image](https://github.com/Irina923-ar/Peersonal-Website/assets/112747712/dd04c15f-2c89-48a5-915a-23c7b965840d)
 
 
 ## Technologies Used
