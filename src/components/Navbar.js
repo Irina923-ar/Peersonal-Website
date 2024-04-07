@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
@@ -8,8 +8,8 @@ const Navbar = () => {
     "home",
     "about",
     "diary",
-    "skills",
     "portfolios",
+    "skills",
     "contact",
   ];
 
@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="div-logo">
-        <img className="logo" src="assets/logo.png" alt="Logo" />
+        <img className="logo" src="assets/logo-website.jpg" alt="Logo" />
       </div>
       <div className="menu">
         <div className={`menu-section ${isMenuOpen ? "open" : ""}`}>
@@ -112,7 +112,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="menu-svg" onClick={toggleMenu}>
-        <img src="assets/menu.svg"></img>
+        <img src="assets/menu.svg" alt="Menu"></img>
       </div>
     </div>
   );
