@@ -17,7 +17,7 @@ const SkillsPage = () => {
         </div>
         <div className="section-container">
           <div className="container-div">
-            <div className="subtitle-container">Feb 2022</div>
+            <div className="subtitle-container">Feb 2022 - Now</div>
             <div className="text-gradient-1">Artistic Exploration</div>
             <div className="about-page-subtitle">
               Unfurled my creative wings with Procreate in February 2022,
@@ -29,7 +29,7 @@ const SkillsPage = () => {
             </div> */}
           </div>
           <div className="container-div">
-            <div className="subtitle-container">Aug 2022</div>
+            <div className="subtitle-container">Aug 2022 - Now</div>
             <div className="text-gradient-1"> Initiation</div>
             <div className="about-page-subtitle">
               Began my front-end journey in August 2022, immersing myself in the
@@ -54,7 +54,7 @@ const SkillsPage = () => {
             </div> */}
           </div>
           <div className="container-div">
-            <div className="subtitle-container">Nov 2022</div>
+            <div className="subtitle-container">Nov 2022 - Now</div>
             <div className="text-gradient-1">Practical Application</div>
             <div className="about-page-subtitle">
               Applied my learning to build my first website on 26.11.2022, a
